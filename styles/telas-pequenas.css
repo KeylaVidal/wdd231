@@ -1,0 +1,125 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+.pagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e9e9d9;
+}
+
+/* CABEÇALHO */
+header { background: #e9e9d9; padding: 0.8rem 1rem; border-bottom: 1px solid #ddd; }
+.cabecalho-interno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.marca { display: flex; gap: 0.6rem; align-items: center; }
+.icones-topo { display: flex; gap: 0.8rem; align-items: center; }
+.icone-tema {
+    width: 22px; height: 22px;
+    border: 1px solid; border-radius: 50%;
+}
+.botao-hamburguer {
+    font-size: 2rem; border: none; background: transparent; cursor: pointer;
+}
+
+/* MENU */
+nav ul {
+    list-style: none; background: #e9e9d9;
+    display: none; margin-top: 0.5rem; border-top: 1px solid #ddd;
+}
+nav.aberto ul { display: block; }
+nav a {
+    display: block; padding: 0.7rem 1rem;
+    text-decoration: none; color: #222;
+    border-top: 1px solid #eee;
+}
+
+/* HERO — EXATAMENTE IGUAL DO PROFESSOR */
+.hero {
+    border: 1px solid #ddd;
+    height: 220px;
+    position: relative;
+    margin: 0.8rem;
+    overflow: hidden;
+    background-color: #e9e9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.botao-palestra {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.4rem 1rem;
+    background: #888;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main { padding: 1rem; }
+main h2 { margin: 0.5rem 0 1rem; font-size: 1.5rem; font-weight: bold; }
+
+.grade-superior {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bloco { background: #f0f0e6; }
+.bloco h3 {
+    background: #222; color: #fff;
+    padding: 0.4rem 1rem; text-align: left;
+}
+.espaco { height: 120px; background: #f0f0e6; }
+.dados { padding: 1rem; }
+.temp { font-size: 1.8rem; font-weight: bold; display: block; }
+.bloco p { padding: 0.2rem 1rem; font-size: 0.95rem; }
+
+/* EMPRESAS */
+.grade-empresas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.cartao-empresa {
+    background: #f0f0e6; padding: 1rem;
+}
+.cartao-empresa h4 { text-align: center; }
+.cartao-empresa > p { text-align: center; font-size: 0.85rem; }
+.cartao-empresa hr { margin: 0.5rem 0; border: none; border-top: 1px solid #ccc; }
+.dados-empresa { display: flex; gap: 0.8rem; align-items: flex-start; margin-top: 0.5rem; }
+.quadrado {
+    width: 60px; height: 60px; background: #ccc; border: 1px solid #999;
+}
+
+/* RODAPÉ */
+footer {
+    padding: 1.5rem 1rem; font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    background: #e9e9d9;
+}
+.lado-esquerdo { margin-bottom: 1rem; }
+.redes { display: flex; gap: 1rem; margin: 1rem 0; }
+.redes a {
+    width: 44px; height: 44px; background: #444; color: #fff;
+    border-radius: 50%; display: grid; place-items: center;
+    text-decoration: none; font-weight: bold;
+}
+.projeto p { margin: 0.2rem 0; }
