@@ -1,0 +1,26 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;max-width:1000px;margin:0 auto}
+header{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid #ccc}
+header span{font-weight:bold;font-size:1.2rem}
+#menu::before{content:"☰";font-size:1.5rem}
+nav{background:black}
+.navigation{list-style:none}
+.navigation li a{display:block;color:white;text-decoration:none;padding:10px 20px}
+.navigation li a:hover{background:#333}
+.active{background:#333}
+main{padding:10px}
+main h1{margin:10px 0}
+.card{border:1px solid #ccc;background:#ddd;margin-bottom:15px}
+.card h2{background:black;color:white;text-align:center;padding:8px}
+.card p{padding:15px}
+.foto-box{background:#ddd;display:flex;justify-content:center;align-items:center;padding:20px}
+.foto-box img{background:#555;width:180px;height:180px}
+.cursos{grid-column:1/3}
+.botoes{display:flex;gap:10px;padding:15px;justify-content:center}
+.botoes button{flex:1;background:#ddd;border:1px solid #999;padding:8px;border-radius:5px}
+#courses{display:grid;grid-template-columns:1fr;gap:10px;padding:0 15px}
+.course{background:#eee;border:1px solid #999;padding:8px;text-align:center;border-radius:5px}
+.completed{background:#c8e6c9}
+.cursos p{text-align:center;padding:10px;font-size:.9rem}
+.social{display:flex;justify-content:center;gap:15px;padding-bottom:10px}
+footer{background:#ddd;text-align:center;padding:15px;margin-top:10px;font-size:.9rem}

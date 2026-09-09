@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial - Câmara de Comércio de Manaus, com informações sobre a cidade, negócios, serviços e associação de empresas locais.">
+    <meta name="author" content="Keyla Vidal">
+    <title>Manaus - Câmara de Comércio</title>
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+</head>
+<body>
+<div class="pagina">
+    <header>
+        <div class="cabecalho-interno">
+            <div class="marca">
+                <svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="45" height="45" fill="#e9e9d9" stroke="#444" stroke-width="1"/>
+                    <path d="M8 37 L22 8 L37 37 Z" fill="none" stroke="#222" stroke-width="2"/>
+                </svg>
+                <span>Manaus<br>Câmara de Comércio</span>
+            </div>
+            <div class="icones-topo">
+                <span class="icone-tema"></span>
+                <button id="botao-menu" class="botao-hamburguer" aria-label="Abrir menu">&#9776;</button>
+            </div>
+        </div>
+        <nav id="navegacao">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Diretório</a></li>
+                <li><a href="#">Associar-se</a></li>
+                <li><a href="#">Descobrir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ÁREA HERO — IGUAL DO PROFESSOR, SÓ COM A SUA IMAGEM -->
+    <section class="hero">
+        <img src="imagens/manaus.jpg" alt="Manaus" loading="lazy">
+        <button class="botao-palestra">Ingressos Palestra</button>
+    </section>
+
+ <main>
+   <h1>Início — Câmara de Comércio de Manaus</h1>
+   <div class="grade-superior">
+     <section class="bloco">
+       <h2>Eventos</h2>
+       <div class="espaco"></div>
+      </section>
+      <section class="bloco">
+        <h2>Clima</h2>
+         <div class="dados">
+          <span class="temp">32°C</span>
+          <p>Parcialmente Nublado</p>
+          <p>Máxima: 34°C</p>
+          <p>Mínima: 24°C</p>
+          <p>Umidade: 75%</p>
+          <p>Nascer do Sol: 06:05</p>
+          <p>Pôr do Sol: 18:25</p>
+         </div>
+      </section>
+      <section class="bloco">
+        <h2>Previsão de Clima</h2>
+        <p>Hoje: 32°C</p>
+        <p>Quarta-Feira: 31°C</p>
+        <p>Sexta-Feira: 28°C</p>
+      </section>
+     </div>
+     <div class="grade-empresas">
+    <div class="cartao-empresa">
+      <h4>Nome da Empresa</h4>
+      <p>Slogan da Empresa</p>
+      <hr>
+      <div class="dados-empresa">
+        <div class="quadrado"></div>
+        <div>
+          <p>EMAIL: info@gmail.com</p>
+          <p>TELEFONE: 55 92 99999-0000</p>
+          <p>SITE: minhaempresa.com.br</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartao-empresa">
+      <h4>Nome da Empresa</h4>
+      <p>Slogan da Empresa</p>
+      <hr>
+      <div class="dados-empresa">
+        <div class="quadrado"></div>
+        <div>
+          <p>EMAIL: info@gmail.com</p>
+          <p>TELEFONE: 55 92 99999-0000</p>
+          <p>SITE: minhaempresa.com.br</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartao-empresa">
+      <h4>Nome da Empresa</h4>
+      <p>Slogan da Empresa</p>
+      <hr>
+      <div class="dados-empresa">
+        <div class="quadrado"></div>
+        <div>
+          <p>EMAIL: info@gmail.com</p>
+          <p>TELEFONE: 55 92 99999-0000</p>
+          <p>SITE: minhaempresa.com.br</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+    <footer>
+        <div class="lado-esquerdo">
+            <p><strong>Manaus Câmara de Comércio</strong></p>
+            <p>Av. Djalma Batista, 1000 — Centro</p>
+            <p>Manaus — AM</p>
+            <p>contato@camara.ma.am.gov.br</p>
+            <p>(92) 3000-0000</p>
+        </div>
+
+        <div class="redes">
+            <a href="#" target="_blank">▶</a>
+            <a href="#" target="_blank">𝕏</a>
+            <a href="#" target="_blank">in</a>
+        </div>
+
+        <div class="projeto">
+            <p>Projeto de Aula WDD231</p>
+            <p>&copy; <span id="ano-atual"></span> Manaus Câmara de Comércio</p>
+            <p>✨Keyla Vidal✨</p>
+            <p id="ultimaModificacao"></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
