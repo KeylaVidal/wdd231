@@ -1,5 +1,5 @@
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;max-width:1000px;margin:0 auto}
+body{font-family:Roboto, Arial, sans-serif;}
 header{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid #ccc}
 header span{font-weight:bold;font-size:1.2rem}
 #menu::before{content:"☰";font-size:1.5rem}
