@@ -1,0 +1,32 @@
+:root{
+ --verde:#004F2D;
+ --amarelo:#FFB20F;
+}
+*{box-sizing:border-box}
+body{font-family:'Open Sans', sans-serif; margin:0; background:#f4f4f4}
+h1,h2,.site-name{font-family:'Montserrat', sans-serif}
+header{background:var(--verde); color:white; padding:1rem}
+.header-top{display:flex; align-items:center; gap:1rem; justify-content:space-between}
+#hamburger{background:none; border:none; color:white; font-size:2rem; cursor:pointer}
+nav{display:none; flex-direction:column}
+nav.open{display:flex}
+nav a{color:white; text-decoration:none; padding:.8rem}
+nav a.ativo{background:var(--amarelo); color:black; border-radius:4px}
+main{max-width:1200px; margin:0 auto; padding:1rem}
+.menu-view{text-align:center; margin:1rem}
+.menu-view button{padding:.7rem 1.2rem; cursor:pointer; border:1px solid var(--verde); border-radius:5px; margin:0 5px}
+.menu-view button.active{background:var(--verde); color:white}
+#members.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1rem; padding:1rem}
+#members.list{display:flex; flex-direction:column; gap:.5rem; padding:1rem}
+#members section{border:1px solid #ccc; padding:1rem; border-radius:8px; background:#fff; box-shadow:2px 2px 5px rgba(0,0,0,0.1)}
+#members.list section{display:grid; grid-template-columns:2fr 1fr 1fr; align-items:center; gap:1rem}
+#members img{width:100%; max-width:150px; height:auto; display:block; margin:0 auto 10px}
+#members.list img{display:none}
+#members a{color:var(--verde); font-weight:bold}
+footer{background:var(--verde); color:white; padding:1.5rem; margin-top:2rem}
+.footer-grid{max-width:1200px; margin:0 auto}
+@media(min-width:600px){
+ #hamburger{display:none}
+ nav{display:flex; flex-direction:row; gap:1rem; margin-top:1rem}
+ .footer-grid{display:grid; grid-template-columns:1fr 1fr; gap:2rem; text-align:left}
+}

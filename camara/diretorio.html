@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmara de Comércio de Manaus - Diretório de Empresas</title>
+    <meta name="description" content="Diretório de membros da Câmara de Comércio de Manaus. Encontre empresas locais associadas.">
+    <meta name="author" content="Keyla Vidal">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook OG - TROQUE seu-usuario pelo seu GitHub -->
+    <meta property="og:title" content="Diretório - Câmara de Comércio de Manaus">
+    <meta property="og:description" content="Conheça as empresas associadas à Câmara de Comércio de Manaus">
+    <meta property="og:image" content="https://seu-usuario.github.io/wdd231/camara/images/og-manaus.webp">
+    <meta property="og:url" content="https://seu-usuario.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS - normalize SEMPRE antes -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/diretorio.css">
+
+    <!-- Fonte do seu planejamento -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <img src="images/logo.webp" alt="Logo Câmara Manaus" width="60" height="60">
+        <div>
+            <span class="site-name">Câmara de Comércio</span>
+            <span class="site-city">Manaus</span>
+        </div>
+        <button id="hamburger" aria-label="Abrir menu">☰</button>
+    </div>
+    <nav id="navigation">
+        <a href="index.html">Início</a>
+        <a href="diretorio.html" class="ativo">Diretório</a>
+        <a href="associe-se.html">Associe-se</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Diretório</h1>
+    <div class="menu-view">
+        <button id="grid" class="active">Grade</button>
+        <button id="list">Lista</button>
+    </div>
+    <div id="members" class="grid"></div>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <p><strong>Câmara de Comércio de Manaus</strong><br>
+            Av. Eduardo Ribeiro, 986 - Centro<br>
+            Manaus, AM 69010-060<br>
+            contato@camarademanaus.org.br<br>
+            (92) 3215-4000</p>
+        </div>
+        <div>
+            <p>WDD 231 - Projeto Câmara<br>
+            ✨Keyla Vidal✨<br>
+            &copy; <span id="currentyear"></span> Câmara de Manaus<br>
+            Última modificação: <span id="lastModified"></span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/diretorio.js" defer></script>
+</body>
+</html>
