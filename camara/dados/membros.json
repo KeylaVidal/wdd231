@@ -4,7 +4,7 @@
     "endereco": "Av. Eduardo Ribeiro, 986 - Centro, Manaus",
     "telefone": "(92) 3215-4000",
     "website": "https://example.com",
-    "imagem": "../images/mercadao.webp",
+    "imagem": "imagens/mercadao.webp",
     "nivel": 3
   },
   {
@@ -12,7 +12,7 @@
     "endereco": "Av. Torquato Tapajós, 2000 - Flores",
     "telefone": "(92) 99999-0001",
     "website": "https://example.com",
-    "imagem": "../images/tech.webp",
+    "imagem": "imagens/tech.webp",
     "nivel": 2
   },
   {
@@ -20,7 +20,7 @@
     "endereco": "INPA - Aleixo, Manaus",
     "telefone": "(92) 99999-0002",
     "website": "https://example.com",
-    "imagem": "../images/bio.webp",
+    "imagem": "imagens/bio.webp",
     "nivel": 3
   },
   {
@@ -28,7 +28,7 @@
     "endereco": "Porto de Manaus - Centro",
     "telefone": "(92) 99999-0003",
     "website": "https://example.com",
-    "imagem": "../images/fluvial.webp",
+    "imagem": "imagens/fluvial.webp",
     "nivel": 1
   },
   {
@@ -36,7 +36,7 @@
     "endereco": "Av. Coronel Teixeira, Ponta Negra",
     "telefone": "(92) 99999-0004",
     "website": "https://example.com",
-    "imagem": "../images/hotel.webp",
+    "imagem": "imagens/hotel.webp",
     "nivel": 2
   },
   {
@@ -44,7 +44,7 @@
     "endereco": "Rua José Clemente, 200 - Centro",
     "telefone": "(92) 99999-0005",
     "website": "https://example.com",
-    "imagem": "../images/cafe.webp",
+    "imagem": "imagens/cafe.webp",
     "nivel": 1
   },
   {
@@ -52,7 +52,7 @@
     "endereco": "Distrito Industrial, Manaus",
     "telefone": "(92) 99999-0006",
     "website": "https://example.com",
-    "imagem": "../images/estaleiro.webp",
+    "imagem": "imagens/estaleiro.webp",
     "nivel": 3
   }
 ]
