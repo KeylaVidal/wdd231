@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrigado - Câmara</title>
+  <link rel="stylesheet" href="estilos/diretorio.css">
+</head>
+<body>
+  <header>
+    <h1>Câmara de Comércio</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="diretorio.html">Diretório</a>
+      <a href="associe-se.html">Associe-se</a>
+    </nav>
+  </header>
+
+  <main style="padding: 40px; text-align: center;">
+    <h1>Obrigado! Sua inscrição foi enviada! 🎉</h1>
+    <p>Confira os dados que você enviou:</p>
+    <div id="resultado" style="text-align: left; max-width: 400px; margin: 20px auto; background: #f5f5f5; padding: 20px; border-radius: 8px;"></div>
+    <br>
+    <a href="index.html" style="background: #003366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Voltar ao Início</a>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    let texto = "";
+    params.forEach((valor, chave) => {
+      texto += `<strong>${chave}:</strong> ${valor}<br>`;
+    });
+    document.getElementById("resultado").innerHTML = texto;
+  </script>
+</body>
+</html>
