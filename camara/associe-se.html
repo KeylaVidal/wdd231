@@ -71,15 +71,13 @@
         <input type="text" name="empresa" title="Digite o nome da sua empresa" required autocomplete="organization">
       </label>
 
-      <label>Nível de Associação
-        <select name="nivel" title="Escolha seu nível">
-          <option value="">Selecione um nível</option>
-          <option value="np">NP - Sem fins lucrativos</option>
-          <option value="bronze">Bronze</option>
-          <option value="silver">Prata</option>
-          <option value="gold">Ouro</option>
-        </select>
-      </label>
+      <fieldset>
+         <legend>Nível de Associação*</legend>
+         <label><input type="radio" name="nivel" value="np" required> NP - Sem fins lucrativos</label>
+         <label><input type="radio" name="nivel" value="bronze"> Bronze</label>
+         <label><input type="radio" name="nivel" value="silver"> Prata</label>
+         <label><input type="radio" name="nivel" value="gold"> Ouro</label>
+      </fieldset>
 
       <label>Descrição da Empresa
         <textarea name="descricao" title="Descreva sua empresa"></textarea>
