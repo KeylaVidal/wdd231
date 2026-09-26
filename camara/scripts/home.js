@@ -24,3 +24,17 @@ async function loadSpotlights(){
   }
 }
 loadSpotlights();
+
+document.getElementById('dataHora').value = new Date().toLocaleString();
+
+document.querySelectorAll('.abre-modal').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById(link.dataset.alvo).showModal();
+  });
+});
+document.querySelectorAll('.fecha-modal').forEach(botao => {
+  botao.addEventListener('click', () => {
+    botao.closest('dialog').close();
+  });
+});
