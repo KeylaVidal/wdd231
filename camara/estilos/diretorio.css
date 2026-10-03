@@ -1,69 +1,336 @@
-:root{
- --verde:#004F2D;
- --amarelo:#FFB20F;
+:root {
+  --verde: #004F2D;
+  --amarelo: #FFB20F;
 }
-*{box-sizing:border-box}
-body{font-family:'Open Sans', sans-serif; margin:0; background:#f4f4f4}
-h1,h2,.site-name{font-family:'Montserrat', sans-serif}
-header{background:var(--verde); color:white; padding:1rem}
-.header-top{display:flex; align-items:center; gap:1rem; justify-content:space-between}
-#hamburger{background:none; border:none; color:white; font-size:2rem; cursor:pointer}
-nav{display:none; flex-direction:column}
-nav.open{display:flex}
-nav a{color:white; text-decoration:none; padding:.8rem}
-nav a.ativo{background:var(--amarelo); color:black; border-radius:4px}
-main{max-width:1200px; margin:0 auto; padding:1rem}
-.menu-view{text-align:center; margin:1rem}
-.menu-view button{padding:.7rem 1.2rem; cursor:pointer; border:1px solid var(--verde); border-radius:5px; margin:0 5px}
-.menu-view button.active{background:var(--verde); color:white}
-#members.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1rem; padding:1rem}
-#members.list{display:flex; flex-direction:column; gap:.5rem; padding:1rem}
-#members section{border:1px solid #ccc; padding:1rem; border-radius:8px; background:#fff; box-shadow:2px 2px 5px rgba(0,0,0,0.1)}
-#members.list section{display:grid; grid-template-columns:2fr 1fr 1fr; align-items:center; gap:1rem}
-#members img{width:100%; max-width:150px; height:auto; display:block; margin:0 auto 10px}
-#members.list img{display:none}
-#members a{color:var(--verde); font-weight:bold}
-footer{background:var(--verde); color:white; padding:1.5rem; margin-top:2rem}
-.footer-grid{max-width:1200px; margin:0 auto}
-@media(min-width:600px){
- #hamburger{display:none}
- nav{display:flex; flex-direction:row; gap:1rem; margin-top:1rem}
- .footer-grid{display:grid; grid-template-columns:1fr 1fr; gap:2rem; text-align:left}
-}
-/* HOME */
-.hero { position: relative; height: 400px; overflow: hidden; }
-.hero img { width: 100%; height: 100%; object-fit: cover; object-position: center;}
-.cta-button { position: absolute; bottom: 30px; right: 30px; background: #004080; color: white; padding: 15px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; }
-.home-grid { display: grid; gap: 1rem; padding: 1rem; }
-.card { border: 1px solid #ccc; padding: 1rem; border-radius: 8px; background: #fff; }
-.spotlights { grid-column: 1/-1; }
-#spotlight-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-@media (min-width: 800px) { .home-grid { grid-template-columns: 1fr 1fr 1fr; } }
 
-/* --- PÁGINA ASSOCIE-SE --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+h1, h2, .site-name {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO */
+header {
+  background: var(--verde);
+  color: white;
+  padding: 1rem;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+
+nav a.ativo,
+nav a.active {
+  background: var(--amarelo);
+  color: black;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* PÁGINA INÍCIO — HOME */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: #004080;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.home-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.spotlights {
+  grid-column: 1 / -1;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* DIRETÓRIO — MEMBROS */
+.menu-view {
+  text-align: center;
+  margin: 1rem;
+}
+
+.menu-view button {
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  border: 1px solid var(--verde);
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.menu-view button.active {
+  background: var(--verde);
+  color: white;
+}
+
+#members.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#members.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+#members section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#members.list section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+#members img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+#members.list img {
+  display: none;
+}
+
+#members a {
+  color: var(--verde);
+  font-weight: bold;
+}
+
+/* PÁGINA ASSOCIE-SE */
 form label {
   display: block;
   margin-bottom: 15px;
 }
-form input, form select, form textarea {
+
+form input,
+form select,
+form textarea {
   display: block;
   width: 100%;
   max-width: 400px;
   padding: 8px;
   margin-top: 5px;
 }
+
 .cards {
   margin-top: 30px;
 }
-.card {
+
+/* RODAPÉ */
+footer {
+  background: var(--verde);
+  color: white;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   PÁGINA SOBRE — 8 LOCAIS DE MANAUS
+   ========================================== */
+
+/* Mensagem de visita */
+#mensagem-visita {
+  background: #e6f2ff;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Grade com Grid Nomeada — CELULAR (até 640px) */
+.galeria-sobre {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h";
+}
+
+/* Atribui cada cartão a uma área */
+.galeria-sobre section:nth-child(1) { grid-area: a; }
+.galeria-sobre section:nth-child(2) { grid-area: b; }
+.galeria-sobre section:nth-child(3) { grid-area: c; }
+.galeria-sobre section:nth-child(4) { grid-area: d; }
+.galeria-sobre section:nth-child(5) { grid-area: e; }
+.galeria-sobre section:nth-child(6) { grid-area: f; }
+.galeria-sobre section:nth-child(7) { grid-area: g; }
+.galeria-sobre section:nth-child(8) { grid-area: h; }
+
+/* Estrutura INTERNA de cada cartão */
+.galeria-sobre section {
   border: 1px solid #ccc;
   padding: 1rem;
-  margin-bottom: 1rem;
   border-radius: 8px;
   background: white;
+  display: grid;
+  grid-template-areas:
+    "nome"
+    "foto"
+    "endereco"
+    "descricao"
+    "botao";
+  gap: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-nav a.active, nav a.ativo {
-  background-color: #ffcc00;
-  color: black;
-  font-weight: bold;
+
+.galeria-sobre h2        { grid-area: nome; margin: 0; font-size: 1.1rem; }
+.galeria-sobre figure     { grid-area: foto; margin: 0; }
+.galeria-sobre img        { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; }
+.galeria-sobre address    { grid-area: endereco; font-style: normal; color: #555; font-size: 0.9rem; }
+.galeria-sobre p          { grid-area: descricao; margin: 0.5rem 0; color: #444; }
+.galeria-sobre button     { grid-area: botao; justify-self: start; padding: 0.6rem 1.2rem; border: none; border-radius: 6px; background: #283593; color: white; cursor: pointer; }
+
+/* TABLET — 641px a 1024px */
+@media (min-width: 641px) {
+  .galeria-sobre {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+
+  .galeria-sobre section {
+    grid-template-areas:
+      "foto nome"
+      "foto endereco"
+      "foto descricao"
+      "foto botao";
+    grid-template-columns: 140px 1fr;
+    gap: 0.8rem;
+  }
+
+  .galeria-sobre img {
+    height: 140px;
+  }
+}
+
+/* DESKTOP — 1025px pra cima */
+@media (min-width: 1025px) {
+  .galeria-sobre {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b c"
+      "d e f"
+      "g h .";
+  }
+
+  /* ✨ EFEITO FLUTUAÇÃO — SÓ APARECE AQUI! */
+  .galeria-sobre section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+}
+
+/* OUTROS BREAKPOINTS */
+@media (min-width: 600px) {
+  #hamburger { display: none; }
+  nav { display: flex; flex-direction: row; gap: 1rem; margin-top: 1rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; text-align: left; }
+}
+
+@media (min-width: 800px) {
+  .home-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
