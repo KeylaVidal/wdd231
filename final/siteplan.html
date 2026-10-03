@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planejamento — Descubra Manaus</title>
+  <meta name="description" content="Planejamento do site Descubra Manaus - Guia Turístico e Cultural">
+  <meta name="author" content="Keyla Vidal">
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* === CORES === */
+    :root {
+      --cor-verde-floresta: #00695C;   /* Títulos, cabeçalho — natureza/Amazônia */
+      --cor-ouro-manaus: #F9A825;      /* Destaques — sol, riqueza cultural */
+      --cor-texto-escuro: #263238;     /* Texto do corpo — boa leitura */
+      --cor-fundo-claro: #E8F5E9;      /* Fundo suave */
+      --cor-branco: #FFFFFF;           /* Fundos de seções */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: var(--cor-texto-escuro);
+      background-color: var(--cor-fundo-claro);
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--cor-verde-floresta);
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 3px solid var(--cor-ouro-manaus);
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin: 25px 0 10px;
+      border-left: 4px solid var(--cor-ouro-manaus);
+      padding-left: 12px;
+    }
+
+    section {
+      background-color: var(--cor-branco);
+      padding: 22px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    }
+
+    ul, p {
+      margin: 12px 0;
+      font-size: 16px;
+    }
+
+    .cor-amostra {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 1px solid #333;
+      margin-right: 10px;
+      vertical-align: middle;
+      border-radius: 3px;
+    }
+
+    .wireframe {
+      background: #fafafa;
+      padding: 16px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-family: monospace;
+      white-space: pre;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Planejamento do Site</h1>
+
+  <!-- 1. Nome do Site -->
+  <section>
+    <h2>1. Nome do Site</h2>
+    <p><strong>Descubra Manaus — Guia Turístico e Cultural</strong></p>
+    <p>Escolhi este nome porque reflete o propósito do site: apresentar e valorizar os lugares, a cultura e as belezas de Manaus, tanto para visitantes quanto para moradores que querem conhecer melhor a própria cidade.</p>
+  </section>
+
+  <!-- 2. Finalidade -->
+  <section>
+    <h2>2. Finalidade do Site</h2>
+    <p>O site tem como objetivo apresentar os principais pontos turísticos e culturais de Manaus, com informações detalhadas, fotos e dicas de visita. O conteúdo é organizado em três páginas:</p>
+    <ul>
+      <li><strong>Home:</strong> apresentação geral da cidade e seus destaques</li>
+      <li><strong>Pontos Turísticos:</strong> lista de 15 lugares (Teatro Amazonas, Encontro das Águas, Ponta Negra, etc.) carregados dinamicamente de um arquivo JSON, com visualização em janela modal e opção de favoritar</li>
+      <li><strong>Contato:</strong> formulário para o visitante agendar passeios e receber dicas personalizadas</li>
+    </ul>
+  </section>
+
+  <!-- 3. Cenários -->
+  <section>
+    <h2>3. Cenários — Público-Alvo</h2>
+    <p><strong>Cenário 1:</strong> Sou turista e vou visitar Manaus pela primeira vez. Quero saber quais lugares são imperdíveis, horários de funcionamento e como chegar. O site traz informações práticas e confiáveis?</p>
+    <p><strong>Cenário 2:</strong> Moro em Manaus mas nunca visitei muitos pontos da cidade. Busco um guia simples e completo para conhecer melhor minha terra e levar minha família. O site ajuda a descobrir lugares novos?</p>
+  </section>
+
+  <!-- 4. Esquema de Cores -->
+  <section>
+    <h2>4. Esquema de Cores</h2>
+    <ul>
+      <li><span class="cor-amostra" style="background:#00695C"></span><strong>Verde Floresta (#00695C):</strong> cabeçalho, rodapé, títulos — representa a Floresta Amazônica, confiança e identidade local</li>
+      <li><span class="cor-amostra" style="background:#F9A825"></span><strong>Ouro Manaus (#F9A825):</strong> botões, destaques, bordas — remete ao sol, à riqueza cultural e ao encontro das águas</li>
+      <li><span class="cor-amostra" style="background:#263238"></span><strong>Texto Escuro (#263238):</strong> parágrafos — contraste alto para boa leitura</li>
+      <li><span class="cor-amostra" style="background:#E8F5E9"></span><strong>Fundo Claro (#E8F5E9):</strong> fundo da página — tom suave, acolhedor</li>
+      <li><span class="cor-amostra" style="background:#FFFFFF"></span><strong>Branco (#FFFFFF):</strong> fundo das seções — clareza e organização</li>
+    </ul>
+  </section>
+
+  <!-- 5. Tipografia -->
+  <section>
+    <h2>5. Tipografia</h2>
+    <p><strong>Playfair Display:</strong> usada em todos os títulos — fonte com elegância e personalidade, remete à história e à cultura da cidade</p>
+    <p><strong>Roboto:</strong> usada no texto do corpo — moderna, clara e fácil de ler em celulares e computadores</p>
+  </section>
+
+  <!-- 6. Wireframe -->
+  <section>
+    <h2>6. Wireframe — Estrutura</h2>
+    
+    <h3>📱 Versão Celular</h3>
+    <div class="wireframe">
+┌──────────────────────┐
+│  LOGO  ☰ MENU        │
+├──────────────────────┤
+│  TÍTULO PRINCIPAL    │
+│  Subtítulo           │
+├──────────────────────┤
+│  Imagem destaque     │
+├──────────────────────┤
+│  Destaques:          │
+│  • Lugar 1           │
+│  • Lugar 2           │
+│  • Lugar 3           │
+├──────────────────────┤
+│  Rodapé              │
+└──────────────────────┘
+    </div>
+
+    <h3>💻 Versão Computador</h3>
+    <div class="wireframe">
+┌──────────────────────────────────────┐
+│  LOGO      HOME  PONTOS  CONTATO      │
+├──────────────────────────────────────┤
+│  IMAGEM GRANDE — TÍTULO              │
+├──────────────────────┬───────────────┤
+│  3 Lugares em destaque              │
+│  [imagem] [imagem] [imagem]         │
+├──────────────────────────────────────┤
+│  Texto introdutório                 │
+├──────────────────────────────────────┤
+│  Rodapé — Contato / Redes           │
+└──────────────────────────────────────┘
+    </div>
+  </section>
+</body>
+</html>
