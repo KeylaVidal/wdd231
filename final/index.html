@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra Manaus - Guia Turístico e Cultural</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+<header>
+    <div class="cabecalho-conteudo">
+        <div class="logo">🌿 Descubra Manaus</div>
+        <button id="menuBtn" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="ativo">Home</a></li>
+            <li><a href="lugares.html">Pontos Turísticos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="banner">
+        <h1>Bem-vindo a Manaus!</h1>
+        <p>Conheça os encantos, a cultura e as belezas da capital da Amazônia.</p>
+        <a href="lugares.html" class="btn" style="margin-top:1.5rem;">Ver Lugares</a>
+    </section>
+
+    <section class="secao">
+        <h2 class="secao-titulo">Lugares em Destaque</h2>
+        <div class="grade-lugares">
+            <div class="cartao-lugar">
+                <img src="imagens/teatro-amazonas.jpg" alt="Teatro Amazonas" class="cartao-imagem">
+                <div class="cartao-conteudo">
+                    <span class="categoria">Cultura</span>
+                    <h3>Teatro Amazonas</h3>
+                    <p>Um dos mais belos teatros do mundo, construído no auge da borracha.</p>
+                    <a href="lugares.html" class="btn btn-detalhes">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="cartao-lugar">
+                <img src="imagens/encontro-das-aguas.jpg" alt="Encontro das Águas" class="cartao-imagem">
+                <div class="cartao-conteudo">
+                    <span class="categoria">Natureza</span>
+                    <h3>Encontro das Águas</h3>
+                    <p>Fenômeno natural onde dois rios correm lado a lado sem se misturar.</p>
+                    <a href="lugares.html" class="btn btn-detalhes">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="cartao-lugar">
+                <img src="imagens/ponta-negra.jpg" alt="Ponta Negra" class="cartao-imagem">
+                <div class="cartao-conteudo">
+                    <span class="categoria">Lazer</span>
+                    <h3>Ponta Negra</h3>
+                    <p>A praia mais famosa de Manaus, com orla e bela vista do Rio Negro.</p>
+                    <a href="lugares.html" class="btn btn-detalhes">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+            <a href="lugares.html" class="btn">Ver todos os 15 lugares →</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><strong>Descubra Manaus</strong> — Guia Turístico e Cultural</p>
+    <p>📍 Manaus - AM | 📧 contato@descubramanaus.com.br</p>
+    <p>© 2026 Todos os direitos reservados</p>
+    <p>Desenvolvido por: Keyla Vidal</p>
+    <p><a href="https://youtu.be/V8m4WEWG-Dk" target="_blank">Assista à demonstração em vídeo!</a></p>
+</footer>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const menuNav = document.querySelector('nav ul');
+menuBtn.addEventListener('click', () => menuNav.classList.toggle('aberto'));
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "nome": "Teatro Amazonas",
+        "categoria": "Cultura",
+        "descricao": "Um dos mais belos teatros do mundo, construído no auge da borracha.",
+        "endereco": "Largo de São Sebastião, s/n - Centro, Manaus - AM",
+        "horario": "Segunda a Sexta: 9h às 16h | Sábado: 9h às 12h",
+        "entrada": "R$ 30,00 (visita guiada)",
+        "imagem": "imagens/teatro-amazonas.jpg"
+    },
+    {
+        "id": 2,
+        "nome": "Encontro das Águas",
+        "categoria": "Natureza",
+        "descricao": "Fenômeno natural onde o Rio Negro e o Rio Solimões correm lado a lado sem se misturar por vários quilômetros.",
+        "endereco": "Confluência dos Rios Negro e Solimões, Manaus - AM",
+        "horario": "Acesso livre, melhor visual pela manhã",
+        "entrada": "Gratuito",
+        "imagem": "imagens/encontro-das-aguas.jpg"
+    },
+    {
+        "id": 3,
+        "nome": "Ponta Negra",
+        "categoria": "Lazer",
+        "descricao": "A praia mais famosa de Manaus, com orla, calçadão e bela vista do Rio Negro.",
+        "endereco": "Av. Beira Mar - Ponta Negra, Manaus - AM",
+        "horario": "Acesso livre, 24 horas",
+        "entrada": "Gratuito",
+        "imagem": "imagens/ponta-negra.jpg"
+    },
+    {
+        "id": 4,
+        "nome": "Museu do Índio",
+        "categoria": "Cultura",
+        "descricao": "Acervo com mais de 3 mil peças que representam a cultura dos povos indígenas da Amazônia.",
+        "endereco": "Rua Maria Auxiliadora, 246 - Centro, Manaus - AM",
+        "horario": "Terça a Sexta: 8h às 17h | Sábado e Domingo: 9h às 13h",
+        "entrada": "R$ 10,00",
+        "imagem": "imagens/museu-indio.jpg"
+    },
+    {
+        "id": 5,
+        "nome": "Mercado Municipal Adolpho Lisboa",
+        "categoria": "Compras",
+        "descricao": "Mercado histórico com produtos regionais, artesanato, frutas e comidas típicas da Amazônia.",
+        "endereco": "Av. Lourenço da Silva Braga, s/n - Centro, Manaus - AM",
+        "horario": "Segunda a Sábado: 6h às 18h | Domingo: 6h às 12h",
+        "entrada": "Gratuito",
+        "imagem": "imagens/mercado-municipal.jpg"
+    },
+    {
+        "id": 6,
+        "nome": "Palácio Rio Negro",
+        "categoria": "História",
+        "descricao": "Belíssimo palácio do período áureo da borracha, antiga residência oficial do governador.",
+        "endereco": "Av. Djalma Batista, 2300 - Chapada, Manaus - AM",
+        "horario": "Visitas com agendamento prévio",
+        "entrada": "Gratuito",
+        "imagem": "imagens/palacio-rio-negro.jpg"
+    },
+    {
+        "id": 7,
+        "nome": "Parque Municipal do Mindu",
+        "categoria": "Natureza",
+        "descricao": "Reserva urbana com trilhas, vegetação nativa e mirante com vista panorâmica da cidade.",
+        "endereco": "Rua Vivaldo Lima, s/n - Mindu, Manaus - AM",
+        "horario": "Terça a Domingo: 8h às 17h",
+        "entrada": "Gratuito",
+        "imagem": "imagens/parque-mindu.jpg"
+    },
+    {
+        "id": 8,
+        "nome": "Catedral Metropolitana de Manaus",
+        "categoria": "História",
+        "descricao": "Igreja neoclássica inaugurada em 1878, construída com materiais trazidos da Europa.",
+        "endereco": "Largo de São Sebastião - Centro, Manaus - AM",
+        "horario": "Diariamente: 6h às 18h",
+        "entrada": "Gratuito",
+        "imagem": "imagens/catedral.jpg"
+    },
+    {
+        "id": 9,
+        "nome": "Bosque da Ciência - INPA",
+        "categoria": "Natureza e Educação",
+        "descricao": "Área de reserva com animais da Amazônia, trilhas e exposições interativas.",
+        "endereco": "Av. André Araújo, 2936 - Aleixo, Manaus - AM",
+        "horario": "Terça a Sexta: 8h às 12h e 14h às 17h | Fins de semana: 9h às 16h",
+        "entrada": "R$ 15,00",
+        "imagem": "imagens/bosque-ciencia.jpg"
+    },
+    {
+        "id": 10,
+        "nome": "Porto de Manaus",
+        "categoria": "História",
+        "descricao": "Principal porto fluvial da região, ponto de partida e chegada de embarcações de toda a Amazônia.",
+        "endereco": "Av. Marquês de Santa Cruz - Centro, Manaus - AM",
+        "horario": "Funcionamento 24h | Visita externa livre",
+        "entrada": "Gratuito",
+        "imagem": "imagens/porto-manaus.jpg"
+    },
+    {
+        "id": 11,
+        "nome": "Museu de Arqueologia e Etnologia",
+        "categoria": "Cultura",
+        "descricao": "Acervo com artefatos antigos que contam a história dos primeiros habitantes da região amazônica.",
+        "endereco": "Av. General Rodrigo Otávio, 3000 - Campus da UFAM, Manaus - AM",
+        "horario": "Segunda a Sexta: 9h às 17h",
+        "entrada": "Gratuito",
+        "imagem": "imagens/museu-arqueologia.jpg"
+    },
+    {
+        "id": 12,
+        "nome": "Parque do Rio Negro",
+        "categoria": "Natureza",
+        "descricao": "Ampla área de preservação com praias de água doce, trilhas e passeios de barco.",
+        "endereco": "Av. Santos Dumont - Praia da Lua, Manaus - AM",
+        "horario": "Acesso livre, melhor época: setembro a março",
+        "entrada": "Gratuito",
+        "imagem": "imagens/parque-rio-negro.jpg"
+    },
+    {
+        "id": 13,
+        "nome": "Biblioteca Pública do Amazonas",
+        "categoria": "Cultura",
+        "descricao": "Uma das mais antigas e ricas bibliotecas do Norte do Brasil, com acervo histórico valioso.",
+        "endereco": "Rua Barroso, 83 - Centro, Manaus - AM",
+        "horario": "Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h",
+        "entrada": "Gratuito",
+        "imagem": "imagens/biblioteca-publica.jpg"
+    },
+    {
+        "id": 14,
+        "nome": "Mirante da Ponte",
+        "categoria": "Lazer",
+        "descricao": "Vista incrível da Ponte Rio Negro e do rio ao entardecer. Pôr do sol imperdível!",
+        "endereco": "Av. do Contorno - São Raimundo, Manaus - AM",
+        "horario": "Melhor horário: 17h às 19h",
+        "entrada": "Gratuito",
+        "imagem": "imagens/mirante-ponte.jpg"
+    },
+    {
+        "id": 15,
+        "nome": "Centro Cultural Palácio da Justiça",
+        "categoria": "Cultura",
+        "descricao": "Espaço cultural com exposições, eventos e arquitetura histórica no coração de Manaus.",
+        "endereco": "Rua Eduardo Ribeiro, 400 - Centro, Manaus - AM",
+        "horario": "Terça a Sexta: 9h às 18h | Fins de semana: 10h às 16h",
+        "entrada": "Gratuito",
+        "imagem": "imagens/palacio-justica.jpg"
+    }
+]

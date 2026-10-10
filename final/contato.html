@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — Descubra Manaus</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+<header>
+    <div class="cabecalho-conteudo">
+        <div class="logo">🌿 Descubra Manaus</div>
+        <button id="menuBtn" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <nav id="menuNavegacao">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lugares.html">Pontos Turísticos</a></li>
+            <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<main>
+    <section class="secao">
+        <h1 class="secao-titulo">Agende Sua Visita</h1>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem;">Preencha o formulário abaixo e entraremos em contato com dicas personalizadas para sua viagem a Manaus!</p>
+        
+        <form id="formContato" class="formulario">
+            <div class="form-grupo">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+            </div>
+            
+            <div class="form-grupo">
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+            </div>
+            
+            <div class="form-grupo">
+                <label for="data">Data prevista da viagem:</label>
+                <input type="date" id="data" name="data">
+            </div>
+            
+            <div class="form-grupo">
+                <label for="lugar">Lugar de maior interesse:</label>
+                <select id="lugar" name="lugar">
+                    <option value="">-- Escolha um lugar --</option>
+                    <option value="Teatro Amazonas">Teatro Amazonas</option>
+                    <option value="Encontro das Águas">Encontro das Águas</option>
+                    <option value="Ponta Negra">Ponta Negra</option>
+                    <option value="Museu do Índio">Museu do Índio</option>
+                    <option value="Outro">Outro / Ainda não decidi</option>
+                </select>
+            </div>
+            
+            <div class="form-grupo">
+                <label for="mensagem">Sua Mensagem / Dúvida:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte-nos sobre seu passeio ou tire suas dúvidas..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Enviar Mensagem ✅</button>
+        </form>
+    </section>
+</main>
+
+<!-- RODAPÉ -->
+<footer>
+    <p><strong>Descubra Manaus</strong> — Guia Turístico e Cultural</p>
+    <p style="margin-top: 0.5rem;">📍 Manaus - AM | 📧 contato@descubramanaus.com.br</p>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem;">© 2026 Todos os direitos reservados</p>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Desenvolvido por Keyla Vidal</p>
+    <p><a href="https://youtu.be/V8m4WEWG-Dk" target="_blank">Assista à demonstração em vídeo!</a></p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+// ===== MENU =====
+const menuBtn = document.getElementById('menuBtn');
+const menuNavegacao = document.querySelector('nav ul');
+menuBtn.addEventListener('click', () => {
+    menuNavegacao.classList.toggle('aberto');
+});
+
+// ===== FORMULÁRIO =====
+const form = document.getElementById('formContato');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    
+    alert(`Olá, ${nome}! 🎉\nObrigado por entrar em contato!\nEm breve enviaremos dicas incríveis para ${email}!\n\nSeu formulário foi enviado com sucesso! ✅`);
+    
+    form.reset();
+});
+</script>
+
+</body>
+</html>
