@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // ===== LISTA DE LUGARES =====
-const gradeLugares = document.querySelector('.grade-lugares');
+const gradeLugares = document.getElementById('grade-lugares');
 
 if (gradeLugares) {
   fetch('lugares.json')
@@ -35,6 +35,7 @@ if (gradeLugares) {
             <h3>${lugar.nome}</h3>
             <p>${lugar.descricao}</p>
             <span class="cidade">${lugar.cidade}</span>
+            <button class="favoritar">Favoritar</button>
           </div>
         `;
         gradeLugares.appendChild(cartao);
