@@ -322,3 +322,13 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+/* Removendo estilos inline */
+.botao-espaco {
+  margin-top: 1.5rem;
+}
+
+.centralizado {
+  text-align: center;
+  margin-top: 2rem;
+}
