@@ -18,3 +18,27 @@ form.addEventListener('submit', (e) => {
     
     form.reset();
 });
+
+// ===== LISTA DE LUGARES =====
+const gradeLugares = document.querySelector('.grade-lugares');
+
+if (gradeLugares) {
+  fetch('lugares.json')
+    .then(resposta => resposta.json())
+    .then(lugares => {
+      lugares.forEach(lugar => {
+        const cartao = document.createElement('div');
+        cartao.className = 'cartao-lugar';
+        cartao.innerHTML = `
+          <img src="${lugar.imagem}" alt="${lugar.nome}" loading="lazy">
+          <div class="cartao-conteudo">
+            <h3>${lugar.nome}</h3>
+            <p>${lugar.descricao}</p>
+            <span class="cidade">${lugar.cidade}</span>
+          </div>
+        `;
+        gradeLugares.appendChild(cartao);
+      });
+    })
+    .catch(erro => console.log('Erro ao carregar lugares:', erro));
+}
