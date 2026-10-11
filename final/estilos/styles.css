@@ -332,3 +332,35 @@ footer p {
   text-align: center;
   margin-top: 2rem;
 }
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  header .cabecalho-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  nav ul.aberto {
+    display: flex;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+
+  .galeria-lugares {
+    grid-template-columns: 1fr;
+  }
+}
