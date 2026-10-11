@@ -7,18 +7,27 @@
     <meta name="description" content="Conheça os principais pontos turísticos de Manaus. Descubra a história, a cultura e os lugares imperdíveis da capital amazonense.">
     <meta name="author" content="Keyla Vidal">
     <link rel="icon" type="image/png" href="imagens/banner-manaus.jpg">
+    
+    <!-- Open Graph -->
     <meta property="og:title" content="Pontos Turísticos - Descubra Manaus">
     <meta property="og:description" content="Explore os pontos turísticos imperdíveis de Manaus: história, cultura e natureza em um só lugar.">
     <meta property="og:image" content="https://keylavidal.github.io/wdd231/final/imagens/banner-manaus.jpg">
     <meta property="og:url" content="https://keylavidal.github.io/wdd231/final/lugares.html">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/larger.css" media="screen and (min-width: 768px)">
 </head>
 <body>
+
 <header>
     <div class="cabecalho-conteudo">
         <div class="logo">🌿 Descubra Manaus</div>
@@ -36,15 +45,13 @@
 <main>
     <section class="secao">
         <h1 class="secao-titulo">Pontos Turísticos de Manaus</h1>
-        <p style="text-align:center;max-width:700px;margin:0 auto 2rem;">Explore os 15 melhores lugares para visitar em Manaus!</p>
-        <div id="gradeLugares" class="grade-lugares">
-            <div class="centralizado"></div>
-        </div>
+        <p class="subtitulo-secao">Explore os 15 melhores lugares para visitar em Manaus!</p>
+        <div id="gradeLugares" class="grade-lugares"></div>
     </section>
 </main>
 
-<!-- MODAL - Agora começa ESCONDIDO com CSS -->
-<div id="modal" class="modal-fundo" style="display: none;">
+<!-- MODAL -->
+<div id="modal" class="modal-fundo">
     <div class="modal-conteudo">
         <button id="modalFechar" class="modal-fechar">&times;</button>
         <div id="modalCorpo" class="modal-corpo"></div>

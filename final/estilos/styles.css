@@ -120,6 +120,12 @@ nav a.ativo {
     margin: 0.5rem auto 0;
 }
 
+.subtitulo-secao {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
 /* BOTÕES */
 .btn {
     display: inline-block;
@@ -194,13 +200,13 @@ nav a.ativo {
 
 /* MODAL */
 .modal-fundo {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
-    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 200;
@@ -322,46 +328,4 @@ footer p {
     .grade-lugares {
         grid-template-columns: 1fr;
     }
-}
-
-/* Removendo estilos inline */
-.botao-espaco {
-  margin-top: 1.5rem;
-}
-
-.centralizado {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
-  header .cabecalho-conteudo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: white;
-    flex-direction: column;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-
-  nav ul.aberto {
-    display: flex;
-  }
-
-  #menuBtn {
-    display: block;
-  }
-
-  .galeria-lugares {
-    grid-template-columns: 1fr;
-  }
 }
