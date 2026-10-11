@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+    header {
+        padding: 1.2rem 3rem;
+    }
+
+    .banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .secao {
+        padding: 0 3rem;
+    }
+
+    .grade-lugares {
+        gap: 2.5rem;
+    }
+}
